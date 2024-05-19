@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body>
+  <main>
+    <div class="main-wrapper">
+      <div class="result-container">
+        <div class="result-header">
+          <h2>Your Result</h2>
+        </div>
+        <div class="result-score-number">
+         <h2>76</h2>
+          <p>of 100</p>
+        </div>
+        <h2 class="feedback-title">Great</h2>
+        <p class="feedback-description">Your performance exceed 65% of the people conducting the test here!
+        </p>
+      </div><!--result-container-->
+
+
+      <div class="summary-container">
+        <h2>Summary</h2>
+
+        <div class="wrapper reaction">
+          <div class="description-title">
+            <img class="icon" src="images/icon-reaction.svg" alt="reaction icon">
+            <h3 class="reaction-title">Reaction</h3>
+          </div>
+          <div class="summary-score">
+            <p><span class="left-score">80</span> <span class="right-score">/ 100</span></p>
+          </div>
+        </div>
+
+        <div class="wrapper memory">
+          <div class="description-title">
+            <img class="icon" src="images/icon-memory.svg" alt="memory icon">
+            <h3 class="memory-title">Memory</h3>
+          </div>
+          <div class="summary-score">
+            <p><span class="left-score">92</span> <span class="right-score">/ 100</span></p>
+          </div>      
+        </div> 
+        
+        <div class="wrapper verbal">
+          <div class="description-title">
+            <img class="icon" src="images/icon-verbal.svg" alt="verbal icon">
+            <h3 class="verbal-title">Verbal</h3>
+          </div>
+          <div class="summary-score">
+            <p><span class="left-score">61</span> <span class="right-score">/ 100</span></p>
+          </div>      
+        </div>
+
+        <div class="wrapper visual">
+          <div class="description-title">
+            <img class="icon" src="images/icon-visual.svg" alt="visual icon">
+            <h3 class="visual-title">Visual</h3>
+          </div>
+          <div class="summary-score">
+            <p><span class="left-score">72</span> <span class="right-score">/ 100</span></p>
+          </div>      
+        </div>     
+        <button class="continue-button">Continue</button>
+      </div><!---sumamry-container-->
+    </div><!--main-wrapper-->  
+  </main>
+</body>
+</html>

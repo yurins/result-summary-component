@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.result-container {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 0 0 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 3.625rem;
+    filter: drop-shadow(0 1.875rem 1.875rem rgba(61, 108, 236, .15));
+}
+
+.result-header h2 {
+    color: #CAC9FF;
+    font-size: 1.125rem;
+}
+
+.result-score-number {
+    border-radius: 50%;
+    height: 8.75rem;
+    width: 8.75rem;
+    background: linear-gradient(hsl(255.71, 71.79%, 45.88%, 1),  hsl(241.43, 71.79%, 45.88%,0));
+    text-align: center;
+    color: #FFF;
+}
+
+.result-score-number h2 {
+    font-size: 3.5rem;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.result-score-number p {
+    margin: 0 1rem 1rem 1rem;
+    color: #CAC9FF;
+    font-weight: 700;
+}
+
+.feedback-title {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.feedback-description {
+    color: #CAC9FF;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.summary-container {
+    padding: 0 2rem;
+}
+
+.summary-container h2 {
+    margin: 1.5rem auto;
+    color: #303B59;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+    margin: 0 0 1rem 0; 
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 77.25%, .05) ;
+}
+
+.description-title {
+    display: flex;
+    gap: 1rem;
+}
+
+.reaction-title {
+    color: #FF5555;
+    font-weight: 500;
+}
+
+.left-score {
+    color: #303B59;
+    font-weight: 700;
+    padding-right: .4rem;
+}
+
+.right-score {
+    color: #767676;
+    font-weight: 700;
+}
+
+.memory {
+    background: hsla(39.47, 100%, 55.88%, .05);
+}
+
+.memory-title {
+    color: #FFB21E;
+    font-weight: 500;
+}
+
+.verbal {
+    background: hsla(165.88, 100%, 36.67%, .05);
+}
+
+.verbal-title {
+    color: #00BB8F;
+    font-weight: 500;
+}
+
+.visual {
+    background: hsla(233.91, 85.28%, 45.29%, .05);
+}
+
+.visual-title {
+    color: #1125D6;
+    font-weight: 500;
+}
+
+.continue-button {
+    background-color: #303B59;
+    color: #FFF;
+    padding: 1.15rem;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+}
+
+.continue-button:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(119,85,255,1) 0%, rgba(105,67,255,1) 0%, rgba(47,44,233,1) 100%);
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 48rem) {
+
+    body {
+        max-width: 90rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        height: 100vh;
+        background-color: #ECF2FF;
+    }
+
+    .main-wrapper {
+        display: flex;
+        justify-content: center;
+        filter: drop-shadow(0 1.875rem 1.875rem rgba(61, 108, 236, .15));
+    }
+
+    .result-container {
+        border-radius: 1.5rem;
+        filter: none;
+        justify-content: space-evenly;
+        max-width: 23rem;
+    }
+
+    .result-header h2 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .result-score-number {
+        height: 12.5rem;
+        width: 12.5rem;
+    }
+
+    .result-score-number h2 {
+        font-size: 4.5rem;
+        margin: 2.5rem 1.5rem 0 1.5rem;
+    }
+
+    .result-score-number p {
+        font-size: 1.25rem;
+    }
+
+    .feedback-title {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .feedback-description {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    .summary-container {
+        background-color: #FFF;
+        border-radius: 0 1.5rem 1.5rem 0;
+        transform: translatex(-1rem);
+        z-index: -1;
+        padding: 2rem 3.5rem;
+        width: 25rem;    
+    }
+
+    .summary-container h2 {
+        margin: 1.5rem auto;
+    }
+    
+    .wrapper {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .continue-button {
+        filter: drop-shadow(0 1.875rem 1.875rem rgba(61, 108, 236, .15));
+
+    }
+}
